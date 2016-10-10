@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Profile</title>
+    </head>
+    <style>
+        body
+        {
+            margin:0;
+        }
+        #top_banner
+        {
+          background-image:url(http://wallpapercave.com/wp/ETtYan4.jpg);   
+        }
+        #pro_pic
+        {
+            position:relative;
+            left:45%;
+            top:250px;
+            width:150px;
+            height:150px;
+            
+        }
+        #name
+        {
+            position:relative;
+            width:30%;
+            top:80%;
+            left:43.5%;
+            
+        }
+        #space
+        {
+            background-color: darkcyan;
+            
+        }
+        #images
+        {
+            background-color:rgba(200,125, 125, 0.5);
+        }
+        #imgtitle1
+        {
+            position: relative;
+            margin-left: 5%;
+        }
+        #bio
+        {
+            background-color:#C96FF0;
+            width:100vw;
+            height:300px;
+            
+        }
+        #bio_pic
+        {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+        }
+        #bio_title
+        {
+            font-size: 30px;
+            padding-top: 20px;
+            font-weight: bold;
+        }
+        #bottom_banner
+        {
+          background-image:url(http://placekitten.com/1200/1200);
+          position: absolute;
+        
+        }
+        .banner
+        {
+            width:100vw;
+            height:300px;
+            background-position: center;
+            background-size: cover;
+        }
+        .title
+        {
+            position:absolute;
+            left:30%;
+            top:10%;
+            color:rgba(255,255,255,0.8);
+            font-size: 40px;
+            width:41%;
+            background-color:#C24BA1;
+            text-align: center;
+        }
+        .imgtitle
+        {
+            background-color:aliceblue;
+            width:80px;
+            display:inline-block;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 70px;
+            text-align: center;
+            position: relative;
+        }
+        .work
+        {
+            width:100%;
+            height:200px;
+            transition: width 1s, height 1s;
+        }
+        .imgs
+        {
+            position: relative;
+            margin-left: 10px;
+            width: 18%;
+            display: inline-block;
+        }
+        .text
+        {
+            margin-left: 30%;
+        }
+    </style>    
+    <body>
+    <div id = 'top_banner' class = 'banner'>
+        <h3 class='title'>Memes are dreams my friends</h3>
+        <img id ='pro_pic' src= "https://scontent.xx.fbcdn.net/v/t1.0-9/1185048_10151650068040896_2061046634_n.jpg?oh=cf894b62e4665ad3c0970755e7982acb&oe=58A4695B">
+        <h2 id = 'name'>Renzo Pamplona</h2>
+    </div>
+    <div id = 'space' class = 'banner'></div>
+    <div id = 'images' class = 'banner'>
+        <div id = 'imgtitle1' class = 'imgtitle'>Badminton</div>
+        <div id = 'imgtitle2' class = 'imgtitle'>Volleyball</div>
+        <div id = 'imgtitle3' class = 'imgtitle'>Computers</div>
+        <div id = 'imgtitle4' class = 'imgtitle'>Guitar</div>
+        <div id = 'imgtitle5' class = 'imgtitle'>Saxophone</div>
+        <button id = "imgbut1" class = 'imgs'>
+        <img  id = 'img1' class = 'work' src="http://arenabadminton.com/wp-content/gallery/New/g6.jpg"/>
+        </button>
+        <button id = "imgbut2"  class = 'imgs'>
+        <img id = 'img2'class = 'work' src="http://www.longbeachny.gov/vertical/Sites/%7BC3C1054A-3D3A-41B3-8896-814D00B86D2A%7D/uploads/bigstock-Beach-Volleyball-Silhouette-81799844_(1).jpg"/>
+        </button>
+        <button id = "imgbut3"  class = 'imgs'>
+        <img id = 'img3'class = 'work' src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCwHI8CAfMuN0djbSpaiF2sgrbgRz9dv06J0Tqe9OLwWPEr2fV"/>
+        </button>
+        <button id = "imgbut4"  class = 'imgs'>
+        <img id = 'img4' class = 'work' src="http://reginapacis.sch.id/images/user_images/wallpapers-for-gt-taylor-acoustic-guitar-wallpaper.jpg"/>
+        </button>
+        <button id = "imgbut5"  class = 'imgs'>
+        <img id = 'img5' class = 'work' src="http://i.ebayimg.com/00/s/NDk5WDUwMA==/z/fL4AAOSwFL9Trsb8/$_32.JPG"/>
+        </button>
+    </div>
+    <div id = 'bio'>
+       <img id = 'bio_pic' src="https://scontent.xx.fbcdn.net/v/t1.0-9/10304873_570952143010282_8663426335399602619_n.jpg?oh=5fab57c7c1f057fe5ee426cc058813f9&oe=5868962C"/>
+        <div id = 'bio_title' class = 'text'>Bio</div> 
+        <p class = 'text'>My name is Renzo Pamplona and I am 18 years old. I like to play sports like badminton and volleyball. I also enjoy technology and playing video games. And my other passion is music and I play multiple instruments including but not limited to: guitar, piano, and saxophone.</p>
+    </div>
+    <div id = 'bottom_banner' class = 'banner'>
+        <h3 class= "title">Life is like a box of chocolates</h3>
+    </div>
+    
+    <script>
+        var sizeBut1 = document.getElementById("imgbut1");
+        var sizeBut2 = document.getElementById("imgbut2");
+        var sizeBut3 = document.getElementById("imgbut3");
+        var sizeBut4 = document.getElementById("imgbut4");
+        var sizeBut5 = document.getElementById("imgbut5");
+        var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+        var img3 = document.getElementById("img3");
+        var img4 = document.getElementById("img4");
+        var img5 = document.getElementById("img5");
+        var imgtitle1 = document.getElementById("imgtitle1")
+        var imgtitle2 = document.getElementById("imgtitle2")
+        var imgtitle3 = document.getElementById("imgtitle3")
+        var imgtitle4 = document.getElementById("imgtitle4")
+        var imgtitle5 = document.getElementById("imgtitle5")
+        
+        
+        var m_width = 0;
+        var m_height = 0;
+        
+        sizeBut1.onclick = function()
+        {
+            var m_width = 250;
+            var m_height = 250;
+            img1.style.width = m_width + "px";
+            img1.style.height = m_height + "px";
+        }
+        
+        sizeBut2.onclick = function()
+        {
+            var m_width = 250;
+            var m_height = 250;
+            img2.style.width = m_width + "px";
+            img2.style.height = m_height + "px";
+        }
+         
+        sizeBut3.onclick = function()
+        {
+            var m_width = 250;
+            var m_height = 250;
+            img3.style.width = m_width + "px";
+            img3.style.height = m_height + "px";
+        }
+          
+        sizeBut4.onclick = function()
+        {
+            var m_width = 250;
+            var m_height = 250;
+            img4.style.width = m_width + "px";
+            img4.style.height = m_height + "px";
+        }
+           
+        sizeBut5.onclick = function()
+        {
+            var m_width = 250;
+            var m_height = 250;
+            img5.style.width = m_width + "px";
+            img5.style.height = m_height + "px";
+        }
+        
+        imgtitle1.onclick = function()
+        {
+            m_width = 100;
+            m_height = 200;
+            img1.style.width = m_width + "%";
+            img1.style.height = m_height + "px";
+        }
+        
+        imgtitle2.onclick = function()
+        {
+            m_width = 100;
+            m_height = 200;
+            img2.style.width = m_width + "%";
+            img2.style.height = m_height + "px";
+        }
+        
+        imgtitle3.onclick = function()
+        {
+            m_width = 100;
+            m_height = 200;
+            img3.style.width = m_width + "%";
+            img3.style.height = m_height + "px";
+        }
+        
+        imgtitle4.onclick = function()
+        {
+            m_width = 100;
+            m_height = 200;
+            img4.style.width = m_width + "%";
+            img4.style.height = m_height + "px";
+        }
+        
+        imgtitle5.onclick = function()
+        {
+            m_width = 100;
+            m_height = 200;
+            img5.style.width = m_width + "%";
+            img5.style.height = m_height + "px";
+        }
+    </script>
+    </body>
+
+</html> 
